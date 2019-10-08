@@ -1,0 +1,91 @@
+﻿{% extends "app/layout.html" %}
+
+{% block styletypes %}
+{% load static %}
+<!--<link rel="stylesheet" type="text/css" href="{ % static '' % }"/>-->
+{% endblock %}
+
+
+
+{% block content %}
+
+<br/>
+<div class="display-4 head-word font-weight-bold">{{ title }}.</div>
+<h3 class="body-set-1-strong font-weight-bold">{{ message }}</h3>
+
+
+<p>
+    오파츠 서버(하늘, 고지대, 지상, 물+얼음, 지하, 지옥(불+용암), 엔더)
+    sky-ecosystem-1, 2 .. sky-mob-1 ... 진행중.....
+</p>
+
+<a href="#" data-toggle="modal" data-target="#sky-ecosystem-1">
+    <img class="mx-auto img-fluid rounded" src="{% static 'app/media/environment_mob_1.png' %}" alt="">
+</a>
+<div class="modal fade" id="sky-ecosystem-1" tabindex="-1" role="dialog" aria-labelledby="sky-ecosystem-1-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-full" role="document">
+        <div class="modal-body">
+            <img class="mx-auto d-block img-fluid" src="{% static 'app/media/environment_mob_1.png' %}" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+<a href="#" data-toggle="modal" data-target="#sky-ecosystem-2">
+    <img class="mx-auto img-fluid rounded" src="{% static 'app/media/environment_mob_2.png' %}" alt="">
+</a>
+<div class="modal fade" id="sky-ecosystem-2" tabindex="-1" role="dialog" aria-labelledby="sky-ecosystem-2-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-full" role="document">
+        <div class="modal-body">
+            <img class="mx-auto d-block img-fluid" src="{% static 'app/media/environment_mob_2.png' %}" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+<a href="#" data-toggle="modal" data-target="#sky-ecosystem-3">
+    <img class="mx-auto img-fluid rounded" src="{% static 'app/media/environment_mob_3.png' %}" alt="">
+</a>
+<div class="modal fade" id="sky-ecosystem-3" tabindex="-1" role="dialog" aria-labelledby="sky-ecosystem-3-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-full" role="document">
+        <div class="modal-body">
+            <img class="mx-auto d-block img-fluid" src="{% static 'app/media/environment_mob_3.png' %}" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+<a href="#" data-toggle="modal" data-target="#sky-ecosystem-4">
+    <img class="mx-auto img-fluid rounded" src="{% static 'app/media/environment_mob_4.png' %}" alt="">
+</a>
+<div class="modal fade" id="sky-ecosystem-4" tabindex="-1" role="dialog" aria-labelledby="sky-ecosystem-4-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-full" role="document">
+        <div class="modal-body">
+            <img class="mx-auto d-block img-fluid" src="{% static 'app/media/environment_mob_4.png' %}" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+<a href="#" data-toggle="modal" data-target="#sky-ecosystem-5">
+    <img class="mx-auto img-fluid rounded" src="{% static 'app/media/environment_mob_5.png' %}" alt="">
+</a>
+<div class="modal fade" id="sky-ecosystem-5" tabindex="-1" role="dialog" aria-labelledby="sky-ecosystem-5-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-full" role="document">
+        <div class="modal-body">
+            <img class="mx-auto d-block img-fluid" src="{% static 'app/media/environment_mob_5.png' %}" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

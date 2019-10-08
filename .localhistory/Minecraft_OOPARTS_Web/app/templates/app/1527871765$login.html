@@ -1,0 +1,50 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+<h2 class="display-4 head-word font-weight-bold">{{ title }}</h2>
+<div class="row">
+    <div class="col-md-8">
+        <section id="loginForm">
+            <form action="." method="post" class="col-form-label form-control bg-secondary is-invalid">
+                {% csrf_token %}
+                <strong class="ml-2 text-dark">- 서버 관리직에 희망하시는 분은 이메일로 연락 바랍니다</strong>
+
+                <hr />
+                <div class="form-group">
+                    <label for="id_username" class="col-md-2 mb-2 ml-4 custom-control-label font-weight-bold body-set-1-strong">사용자 이름</label>
+                    <div class="col-md-10 ml-5">
+                        {{ form.username }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="id_password" class="col-md-2 mb-2 ml-4 custom-control-label font-weight-bold body-set-1-strong">비밀번호</label>
+                    <div class="col-md-10 ml-5">
+                        {{ form.password }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-10 offset-md-2">
+                        <input type="hidden" name="next" value="/" />
+                        <input type="submit" value="확인" class="btn btn-outline-light" />
+                    </div>
+                </div>
+                {% if form.errors %}
+                <p class="invalid-feedback font-weight-bold">정확한 이름과 맞는 비밀번호를 입력해주세요</p>
+                {% endif %}
+            </form>
+        </section>
+    </div>
+    <div class="col-md-4">
+        <section id="socialLoginForm"></section>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block scripts %}
+
+{% load staticfiles %}
+<script src="{% static 'app/scripts/jquery.validate-1.17.0.min.js' %}"></script>
+
+{% endblock %}

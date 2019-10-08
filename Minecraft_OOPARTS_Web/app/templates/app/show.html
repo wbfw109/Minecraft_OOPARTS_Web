@@ -1,0 +1,16 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<br/>
+<div class="responsive-display-7">{{ title }}.</div>
+<h3>{{ message }}</h3>
+
+
+<div>
+    {% load static %}
+    <img class="mx-auto img-fluid rounded" src="{% static 'app/media/show.png' %}" alt="show image">
+</div>
+
+
+{% endblock %}

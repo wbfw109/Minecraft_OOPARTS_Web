@@ -1,0 +1,72 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+
+<main role="main">
+    <div class="jumbotron img-fluid rounded img-main">
+        <div class="container-fluid">
+            <div class="responsive-display-3 font-weight-bold">
+                <span style="color: red">O</span>
+                <span style="color: blanchedalmond">O</span>
+                <span style="color: deepskyblue">P</span>
+                <span style="color: mediumturquoise">A</span>
+                <span style="color: rebeccapurple">R</span>
+                <span style="color: burlywood">T</span>
+                <span style="color: darkorange">S</span>
+            </div>
+
+            <div class="m-3 ml-3 p-1 text-bg rounded font-weight-bold responsive-display-8">
+                <span style="color: chartreuse">야생인의, </span>
+                <span style="color: darkorange">야생인에 의한, </span>
+                <span style="color: aliceblue">야생인을 위한 </span><br/>
+                <span style="color: red">야생 서버!</span>
+            </div>
+
+
+            <div class="m-3 ml-3">
+                <a href="http://cafe.naver.com/mcooparts" class="btn button-bar-main-1 responsive-display-8" target="_blank">
+                    <strong>사진 | 영상 | 공략 &raquo;</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>
+                <span style="color: greenyellow">서버 접속방법</span>
+            </h2>
+            <p class="ml-3 responsive-display-9">
+                마인크래프트 접속 방법은 이 곳을 참고 !
+            </p>
+            <p>
+                <a class="m-2 btn btn-info font-weight-bold responsive-display-9" href="http://naver.me/5XL7YwEP" target="_blank">클라이언트 다운로드 &raquo;</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2>
+                <span style="color: orchid">게임 환경</span>
+            </h2>
+            <p class="ml-3 responsive-display-9">
+                세계 | 생태계 | 몬스터 | 동물에 대해 알아보자!
+            </p>
+            <p>
+                <a class="m-2 btn btn-info font-weight-bold responsive-display-9" href="{% url 'environment' %}" target="_self">요약 정보 &raquo;</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2>
+                <span style="color: brown">유저가 손수만든 건축물</span>
+            </h2>
+            <p class="ml-3 responsive-display-9">
+                건축실력이 이것 밖에 안되나??<br>
+                나도 건축가가 될 수 있다 !
+                <a class="m-2 btn btn-info font-weight-bold responsive-display-9" href="{% url 'best' %}" target="_self">베스트 건축물 &raquo;</a>
+            </p>
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

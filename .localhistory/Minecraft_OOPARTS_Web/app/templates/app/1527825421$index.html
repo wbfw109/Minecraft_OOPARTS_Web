@@ -1,0 +1,80 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<main role="main">
+<div class="jumbotron rounded float-md-none img-fluid img-main">
+    <div class="subject4-xColor">
+        <span style="color: red">O</span>
+        <span style="color: blanchedalmond">O</span>
+        <span style="color: deepskyblue">P</span>
+        <span style="color: mediumturquoise">A</span>
+        <span style="color: rebeccapurple">R</span>
+        <span style="color: burlywood">T</span>
+        <span style="color: darkorange">S</span>
+    </div>
+    
+
+    <p class="lead indent4">
+        <div> <strong style="color: darkorange">야생인의,</strong>
+        <strong style="color: gold">야생인에 의한,</strong>
+        <strong style="color: ivory">야생인을 위한</strong>
+        </div>
+        <div><strong style="color:crimson">야생 서버!</strong></div>
+    </p>
+
+    <p style="background-image:url({{ STATIC_URL }}/app/media/Beta_3.png">
+        <a href="http://cafe.naver.com/mcooparts" class="btn  button-bar-main-1">
+            사진 | 영상 | 공략 &raquo;
+        </a>
+    </p>
+</div>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>
+            <span style="color: green">서버 접속방법</span>
+        </h2>
+        <p>
+            마인크래프트 접속 방법은 이 곳을 참조 !
+        </p>
+        <p>
+            <a class="btn btn-default" href="http://naver.me/5XL7YwEP">클라이언트 다운로드 &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>
+            <span style="color: orchid">게임 환경</span>
+        </h2>
+        <p>세계 | 생태계 | 몬스터 | 동물에 대해 알아보자!</p>
+        <p>
+            <a class="btn btn-default" href="{% url 'environment' %}">요약 정보 &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>
+            <span style="color: brown">유저가 손수만든 건축물</span>
+        </h2>
+        <p>건축실력이 이것 밖에 안되나??<br>
+        나도 건축가가 될 수 있다 !
+        <p>
+            <a class="btn btn-default" href="{% url 'best' %}">베스트 건축물 &raquo;</a>
+        </p>
+    </div>
+</div>
+
+{% endblock %}

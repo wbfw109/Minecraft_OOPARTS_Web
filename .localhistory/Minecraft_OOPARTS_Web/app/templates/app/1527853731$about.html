@@ -1,0 +1,54 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<br/>
+<div class="display-4 head-word font-weight-bold">{{ title }}.</div>
+<h3>{{ message }}</h3>
+
+<p class="m-2">
+    오파츠 서버는 <span style="color: antiquewhite">2012</span> 년도부터 기획한 서버입니다.<br/>
+    <span style="color: antiquewhite">2014</span> 년 전까지의 베타테스트를 거쳐, 2014 년도에 오픈베타를 시작하여 현재에 이르렀습니다.<br/>
+    항상 다양한 환경 및 다양한 난이도를 제공하기 위해 각 모드 및 플러그인을 적용해보며 테스트하고 있습니다.
+</p><br/>
+
+<p>
+    <div class="display-4 font-weight-bold">
+        <span style="color: red">O</span>
+        <span style="color: blanchedalmond">O</span>
+        <span style="color: deepskyblue">P</span>
+        <span style="color: mediumturquoise">A</span>
+        <span style="color: rebeccapurple">R</span>
+        <span style="color: burlywood">T</span>
+        <span style="color: darkorange">S</span> 란 ?
+    </div>
+
+    <div class="ml-3">
+        <strong class="font-weight-bold">
+            <span class="display-5">O</span>ut-
+            <span class="display-5">O</span>f-
+            <span class="display-5">P</span>lace
+            <span class="display-5">ART</span>ifact
+            <span class="display-5">S </span>
+            <span class="display-5"> (시대에 맞지 않는 물체들)</span>
+        </strong>
+    </div>
+    <div class="indent4">
+        오파츠 서버는
+        <strong style="color: antiquewhite">"기존과 다른,</strong>
+        <strong style="color: orange"> 다양한,</strong>
+        <strong style="color: deepskyblue">신비스러운 환경"</strong>을 제공하는 것을 목표로 합니다.
+    </div>
+    <div class="indent4"> 기존의 형식적인 틀에서 벗어나 유저들에게 더 많은 경험을 제공하고,</div>
+    <div class="indent4"> 유저들의 건의사항을 받아들여, 적절하다고 판단되면 업데이트 계획을 세웁니다.</div>
+    <div class="indent4"> 유저들이 질리지 않도록 각 몹에 대한 밸런스를 일정 주기로 변경하고 새로운 요소를 추가합니다</div>
+    <div class="indent4"> 이 모든 것들은 <strong style="color:bisque">야생서버의 적절한 긴장감을 유지</strong>하기 위해 제한을 걸고 있습니다. </div>
+</p><br/>
+
+<div>
+    {% load static %}
+    <img class="img-fluid" src="{% static 'app/media/introduce.png' %}" alt="introduce image">
+</div>
+
+
+{% endblock %}

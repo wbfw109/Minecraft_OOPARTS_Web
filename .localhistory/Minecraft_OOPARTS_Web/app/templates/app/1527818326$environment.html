@@ -1,0 +1,88 @@
+﻿{% extends "app/layout.html" %}
+
+{% block styletypes %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/content/cover.css' %}" />
+
+{% endblock %}
+{% load static %}
+
+
+{% block content %}
+<br/>
+<div class="subject4">{{ title }}.</div>
+<h3>{{ message }}</h3>
+
+
+<p>
+    오파츠 서버
+</p>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand">Cover</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Cover your page.</h1>
+        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <p class="lead">
+            <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        </div>
+    </footer>
+</div>
+
+
+
+{% endblock %}
+
+
+
+
+
+<!--    
+
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Dg0IjOzopYU?autoplay=1" frameborder="0"></iframe>
+</div>
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{ % static 'app/media/environment_mob_1.png' %}" alt="environment_mob_1 image">
+</div>
+
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{ % static 'app/media/environment_mob_2.png' %}" alt="environment_mob_2 image">
+</div>
+
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{ % static 'app/media/environment_mob_3.png' %}" alt="environment_mob_3 image">
+</div>
+
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{ % static 'app/media/environment_mob_4.png' %}" alt="environment_mob_4 image">
+</div>
+
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{ % static 'app/media/environment_mob_5.png' %}" alt="environment_mob_5 image">
+</div>
+-->

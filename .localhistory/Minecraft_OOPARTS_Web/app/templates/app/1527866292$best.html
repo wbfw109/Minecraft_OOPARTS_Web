@@ -1,0 +1,35 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<br/>
+<div class="subject4">{{ title }}.</div>
+<h3>{{ message }}</h3>
+
+<p>
+    대표 건축물
+</p>
+
+
+
+<div class="thumbnail img-auto">
+    {% load static %}
+    <img src="{% static 'app/media/beta_1.png' %}" alt="app/media/beta_1 image">
+</div>
+
+
+<div class="thumbnail img-auto">
+    {% load static %}
+    <img src="{% static 'app/media/beta_2.png' %}" alt="app/media/beta_2 image">
+</div>
+
+
+<div class="thumbnail img-auto">
+    {% load static %}
+    <img src="{% static 'app/media/beta_3.png' %}" alt="app/media/beta_3 image">
+</div>
+
+
+
+
+{% endblock %}

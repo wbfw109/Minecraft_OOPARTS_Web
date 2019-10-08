@@ -1,0 +1,16 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<br/>
+<div class="subject4">{{ title }}.</div>
+<h3>{{ message }}</h3>
+
+
+<div class="img-thumbnail float-md-none img-fluid">
+    {% load static %}
+    <img src="{% static 'app/media/show.png' %}" alt="show image">
+</div>
+
+
+{% endblock %}

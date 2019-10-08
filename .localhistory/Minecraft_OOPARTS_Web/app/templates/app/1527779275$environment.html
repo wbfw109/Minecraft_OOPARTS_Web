@@ -1,0 +1,97 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<br/>
+<div class="subject4">{{ title }}.</div>
+<h3>{{ message }}</h3>
+
+
+<p>
+    오파츠 서버
+</p>
+<div class="row">
+    <div class="col-sm-4 col-md-3 col-lg-2 thumbnailcontainer">
+        <div class="img-thumbnail">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/0/03/Mountain_Bluebird.jpg" alt="image">
+            <div class="carousel-caption">
+                <div class="thumbnailheader"><h3>Lorem ipsum</h3></div>
+                <p>Lorem ipsum ad his scripta blandit partiendo.</p>
+                <p><a href="#" class="btn btn-default center-block" role="button">Open</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 col-lg-2 thumbnailcontainer">    
+        <div class="img-thumbnail">
+            <div class="container-fluid">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/0/03/Mountain_Bluebird.jpg" alt="image" class="img-responsive center-block">
+            </div>
+            <div class="carousel-caption">
+                <div class="thumbnailheader"><h3>Lorem ipsum.</h3></div>
+                <p>Lorem ipsum ad his scripta blandit partiendo.</p>
+                <p><a href="#" class="btn btn-default center-block" role="button">Open</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 col-lg-2 thumbnailcontainer">    
+        <div class="img-thumbnail">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/8/84/Leaning_Tower_of_Pisa_(April_2012).jpg" alt="image" class="img-responsive center-block">
+            <div class="carousel-caption">
+                <div class="thumbnailheader"><h3>Lorem ipsum.</h3></div>
+                <p>Lorem ipsum ad his scripta blandit partiendo.</p>
+                <p><a href="#" class="btn btn-default center-block" role="button">Open</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+<!--    
+
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Dg0IjOzopYU?autoplay=1" frameborder="0"></iframe>
+</div>
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{ % static 'app/media/environment_mob_1.png' %}" alt="environment_mob_1 image">
+</div>
+
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{% static 'app/media/environment_mob_2.png' %}" alt="environment_mob_2 image">
+</div>
+
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{ % static 'app/media/environment_mob_3.png' %}" alt="environment_mob_3 image">
+</div>
+
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{ % static 'app/media/environment_mob_4.png' %}" alt="environment_mob_4 image">
+</div>
+
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{ % static 'app/media/environment_mob_5.png' %}" alt="environment_mob_5 image">
+</div>
+-->

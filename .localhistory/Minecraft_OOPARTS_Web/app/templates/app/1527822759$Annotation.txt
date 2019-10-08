@@ -1,0 +1,102 @@
+﻿Bootstrap is a free and open-source front-end library for designing websites and web applications.
+    // https://getbootstrap.com/
+    Bootstrap for responsive layout that accommodates mobile form factors.
+    It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.
+    Unlike many web frameworks, it concerns itself with front-end development only.
+        Front-end web development is the practice of converting data to graphical interface for user to view and interact with data through digital interaction using HTML, CSS and Javascript.
+    // https://getbootstrap.com/docs/4.1/getting-started/introduction/
+    ★ Look Version ! Compatible
+        
+    ★ bootstrap.css VS bootstrap.min.css        (also .js, this .css require script)
+        bootstrap.min.css has been minified. This means all the whitespace and other extra characters have been removed.
+        This is commonly done for use in production, to reduce the size of the file.
+        When developing, it is usually helpful to use the unminified version, since, as you said, it is readable.
+    - navbar (navigation bar)
+    - Containers are the most basic layout element in Bootstrap and are required when using our default grid system.
+        Containers are the most basic layout element in Bootstrap and are required when using our default grid system.
+        Choose from a responsive, fixed-width container (meaning its max-width changes at each breakpoint) or fluid-width (meaning it’s 100% wide all the time).
+    - navbar-header
+        The navbar-header is mostly an architectural class for Bootstrap navbar.
+        It allocates approximately 150px to the left of the navbar to wrap the navbar-brand and allow the brand name or logo to make use of the entire area on click or hover.
+    - sr-only
+        스크린 리더에 사용되는 정보를 숨기는 데 사용
+    - active ..
+    - Text, Bacgkround
+        // https://getbootstrap.com/docs/4.0/utilities/colors/#background-color
+        // https://getbootstrap.com/docs/4.0/utilities/text/
+        // https://getbootstrap.com/docs/4.0/utilities/colors/#color
+        // https://mdbootstrap.com/css/hover-effects/
+    [Invalid]
+        [Edit]
+            navbar-reverse 
+                background: white url("../media/65770095_p0.jpg") no-repeat;
+    [Add]
+        [Invalid]
+        .navbar-inverse-custom-background-1 {
+            background-color: #222;
+            border-color: #080808;
+        }
+        
+
+modernizr.js (모더나이저)
+    It’s a collection of superfast tests – or “detects” as we like to call them – which run as your web page loads,
+        then you can use the results to tailor the experience to the user.
+    Modernizr란 사용자의 브라우저가 현재 가지고 있는 HTML5, CSS 기능들을 감지하고 지원여부를 판별하는 Javascript 라이브러리 입니다.
+        다양한 브라우저에서 지원되는 기능을 하나씩 확인해가면서 개발하는 것은 현실적으로 불가능하기 때문에 Modernizr와 같은 라이브러리를 통해 필요기능을 감지하고 지원 여부에 따라 개발자가 동적으로 처리를 달리할 수 있습니다.
+        
+respond.js
+    A fast & lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, and more)
+        Media queries is a CSS3 module allowing content rendering to adapt to conditions such as screen resolution (e.g. smartphone screen vs. computer screen).
+        It became a W3C recommended standard in June 2012, and is a cornerstone technology of responsive web design (RWD).
+JQuery (Java script library)
+    JQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It is free, 
+    pen-source software using the permissive MIT License. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin.
+    
+HTML
+    embed tag   -> needed  ~~ /embed/ ~~
+        YouTube Embedded Players and Player Parameters
+            // https://developers.google.com/youtube/player_parameters?hl=ko
+CSS (Cascading Style Sheet)
+    Basic
+        // https://code.tutsplus.com/ko/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+    Image
+        https://getbootstrap.com/docs/4.0/content/images/
+    @ (at-rules)
+    
+    href="#"
+        페이지의 이동 없이 스크립트만 실행
+	button
+		모바일 환경을 위한 툴바에 버튼 만들기
+Django
+    [settings.py] view.py     →   urls.py   →   *.html
+    { { foo }}
+        this is a placeholder in the template, for the variable foo that is passed to the template from a view.
+
+    { %  %} 
+        when text is surrounded by these delimiters,
+        it means that there is some special function or code running, and the result of that will be placed here
+        [Ex.]
+            forms.py, login.html
+            { {form.username }} is variable in forms.py
+
+    django.contrib contains optional, de facto standard implementations of common patterns
+        (djang contribution)
+    
+    Login
+        When you submit the form, Django attempts to authenticate the credentials you provide (such as the super user's credentials).
+        If authentication fails, you remain on the same page but form.errors set to true.
+        If authentication is successful, Django navigates to the relative URL in the "next" field, <input type="hidden" name="next" value="/" />
+            ,which in this case is the home page (/).
+    이미지 style 구문 안에서 삽입
+        style="background-image:url({ { STATIC_URL }}/app/media/Beta_3.png">
+
+    
+{% load static %}  VS  {% load staticfiles %}
+    Django V1.10 now recommends just {% load static %}.
+    "In older versions, you had to use {% load static from staticfiles %} in your template to serve files from the storage defined in STATICFILES_STORAGE.
+    This is no longer required." 
+
+
+사진이 되는 것이 있고 안되는것이 있음.. 업로드..라고 해야하나..
+_references.js  ???
+  

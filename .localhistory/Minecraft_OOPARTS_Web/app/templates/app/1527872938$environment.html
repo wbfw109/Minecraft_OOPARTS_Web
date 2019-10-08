@@ -1,0 +1,91 @@
+﻿{% extends "app/layout.html" %}
+
+{% block styletypes %}
+{% endblock %}
+
+
+
+{% block content %}
+<br/>
+<div class="subject4">{{ title }}.</div>
+<h3>{{ message }}</h3>
+
+
+<p>
+    오파츠 서버
+</p>
+
+<!--  Modal content for the mixer image example -->
+<div class="modal fade pop-up-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myLargeModalLabel-1">Mixer Board</h4>
+            </div>
+            <div class="modal-body">
+                <img src="http://i.imgur.com/YZ7AGyF.jpg.jpg" class="img-responsive img-rounded center-block" alt="">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal mixer image -->
+ 
+<!--  Modal content for the lion image example -->
+<div class="modal fade pop-up-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myLargeModalLabel-2">Lion</h4>
+            </div>
+            <div class="modal-body">
+                <img src="http://i.imgur.com/kzGVqbd.jpg" class="img-responsive img-rounded center-block" alt="">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal mixer image -->
+
+
+{% endblock %}
+
+
+
+
+
+<!--    
+
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Dg0IjOzopYU?autoplay=1" frameborder="0"></iframe>
+</div>
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{ % static 'app/media/environment_mob_1.png' %}" alt="environment_mob_1 image">
+</div>
+
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{ % static 'app/media/environment_mob_2.png' %}" alt="environment_mob_2 image">
+</div>
+
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{ % static 'app/media/environment_mob_3.png' %}" alt="environment_mob_3 image">
+</div>
+
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{ % static 'app/media/environment_mob_4.png' %}" alt="environment_mob_4 image">
+</div>
+
+
+<div class="thumbnail img-auto">
+    { % load static %}
+    <img src="{ % static 'app/media/environment_mob_5.png' %}" alt="environment_mob_5 image">
+</div>
+-->

@@ -1,0 +1,135 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+input,
+select,
+textarea { max-width: 280px; }
+
+/* styles for validation helpers */
+
+.field-validation-error { color: #b94a48; }
+
+.field-validation-valid { display: none; }
+
+input.input-validation-error { border: 1px solid #b94a48; }
+
+input[type="checkbox"].input-validation-error { border: 0 none; }
+
+.validation-summary-errors { color: #b94a48; }
+
+.validation-summary-valid { display: none; }
+
+
+p div { text-indent: 10px }
+
+.indent1 { text-indent: 50px; }
+
+.indent2 { text-indent: 40px; }
+
+.indent3 { text-indent: 30px; }
+
+.indent4 { text-indent: 20px; }
+
+.indent5 { text-indent: 10px; }
+
+.subject4 {
+    font-size: 2em;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+.subject4-xColor {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.subject5 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+
+.menu-bar-main-0 {
+    color: salmon;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.menu-bar-main-1 {
+    color: gold;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.menu-bar-main-2 {
+    color: darkgoldenrod;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.menu-bar-main-0:hover,
+.menu-bar-main-1:hover,
+.menu-bar-main-2:hover {
+    color: mediumspringgreen;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.button-bar-main-1 { background-color: darkslateblue; }
+
+.button-bar-main-1:hover {
+    color: mediumspringgreen;
+    background-color: darkslategray;
+}
+
+.img-auto {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    height: auto;
+    
+}
+.img-main {
+    background-image: url('../media/banner.png');
+    max-width: 100% !important;
+    max-height: 100% !important;
+
+}
+
+
+
+/*
+    흠.. 나중에 사진.. 큰거로;.. 안맞네.. no repeat 로 바꾸자.
+        background-repeat: no-repeat;
+
+
+    p > div {
+        text-indent: 10px;
+    }
+
+    p > div > div {
+        text-indent: 20px;
+    }
+    ??
+
+
+    CSS Lint
+        Don't use !important ..... ...?
+
+    텍스트 크기 display 속성.
+*/

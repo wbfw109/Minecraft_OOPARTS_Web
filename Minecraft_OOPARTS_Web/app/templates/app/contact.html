@@ -1,0 +1,50 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<br/>
+<div class="responsive-display-3 head-word font-weight-bold">{{ title }}.</div>
+<h3 class="body-set-1-strong font-weight-bold">{{ message }}</h3><br/>
+
+
+<div class="ml-3 responsive-display-9">
+    이 사이트는 <strong class="body-set-1-strong">오파츠 서버의 공식사이트</strong>입니다.
+</div>
+<div class="ml-4">
+    - 공식 사항 &amp; 건의 사항을 다루고 있습니다<br />
+    - 개인적인 사진 및 영상 &amp; 공략글 등은 네이버 카페를 참고하시길 바랍니다</div>
+<br/><br/>
+
+
+<address>
+    <p class="responsive-display-8 body-set-1-info font-weight-bold">연락처</p>
+
+    <div class="ml-2 responsive-display-9 body-set-1-strong">
+        <abbr title="Phone">
+            <strong>P</strong>
+        </abbr>
+        <br/>
+        <div class="ml-2 responsive-display-10">: ???</div>
+    </div>
+    <div class="ml-2 responsive-display-9 body-set-1-strong">
+        <strong>지원</strong>
+
+        <div class="ml-2">
+            : <a class="body-set-1-link responsive-display-10" href="mailto:gnv112@naver.com">gnv112@naver.com</a>
+        </div>
+    </div>
+    <div class="ml-2 responsive-display-9 body-set-1-strong">
+        <strong>건의사항</strong>
+
+        <div class="ml-2">
+            : <a class="body-set-1-link responsive-display-10" href="http://cafe.naver.com/mcooparts" target="_blank">http://cafe.naver.com/mcooparts</a>
+        </div>
+    </div>
+</address>
+<div>
+    {% load static %}
+    <img class="img-fluid" src="{% static 'app/media/iphone_phone_case.png' %}" alt="phone case image">
+</div>
+
+
+{% endblock %}

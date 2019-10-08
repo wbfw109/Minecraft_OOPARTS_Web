@@ -1,0 +1,35 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<br/>
+<div class="display-4 head-word font-weight-bold">{{ title }}.</div>
+<h3 class="body-set-1-strong font-weight-bold">{{ message }}</h3><br/>
+
+<p>
+    대표 건축물
+</p>
+
+
+
+<div>
+    {% load static %}
+    <img class="img-fluid" src="{% static 'app/media/beta_1.png' %}" alt="app/media/beta_1 image">
+</div>
+
+
+<div>
+    {% load static %}
+    <img img class="img-fluid" src="{% static 'app/media/beta_2.png' %}" alt="app/media/beta_2 image">
+</div>
+
+
+<div>
+    {% load static %}
+    <img img class="img-fluid" src="{% static 'app/media/beta_3.png' %}" alt="app/media/beta_3 image">
+</div>
+
+
+
+
+{% endblock %}

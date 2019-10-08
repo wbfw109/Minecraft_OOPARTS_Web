@@ -1,0 +1,154 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+input,
+select,
+textarea { max-width: 280px; }
+
+/* styles for validation helpers */
+
+.field-validation-error { color: #b94a48; }
+
+.field-validation-valid { display: none; }
+
+input.input-validation-error { border: 1px solid #b94a48; }
+
+input[type="checkbox"].input-validation-error { border: 0 none; }
+
+.validation-summary-errors { color: #b94a48; }
+
+.validation-summary-valid { display: none; }
+
+
+p div { text-indent: 10px }
+
+.indent1 { text-indent: 50px; }
+
+.indent2 { text-indent: 40px; }
+
+.indent3 { text-indent: 30px; }
+
+.indent4 { text-indent: 20px; }
+
+.indent5 { text-indent: 10px; }
+
+.subject4 {
+    font-size: 2em;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+.subject4-xColor {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.subject5 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+
+.menu-bar-main-0 {
+    color: salmon;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.menu-bar-main-1 {
+    color: gold;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.menu-bar-main-2 {
+    color: darkgoldenrod;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.menu-bar-main-0:hover,
+.menu-bar-main-1:hover,
+.menu-bar-main-2:hover {
+    color: mediumspringgreen;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.button-bar-main-1 { background-color: darkslateblue; }
+
+.button-bar-main-1:hover { background-color: darkred; }
+
+.img-auto {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    height: auto;
+    
+}
+.img-main {
+    background-image: url('../media/banner.png');
+
+}
+
+
+
+/*
+    # is an id selector, used to target a single specific element with a unique id, but . is a class selector used to target multiple elements with a particular class. To put it another way:
+        #foo {} will style the single element declared with an attribute id="foo"
+        .foo {} will style all elements with an attribute class="foo" (you can have multiple classes assigned to an element too, just separate them with spaces, e.g. class="foo bar")
+
+
+    - 절대단위 : in, cm, mm, pt, pc가 있으며 출력장치(모니터)의 물리적 속성을 아는 경우 효율적
+    - 상대단위 : em, ex, px, %가 있으며 기종간, 플랫폼 간의 호환성을 유지하는데 유리
+    
+    _ 를 못 쓰는 듯 하다. 인식이 안됨.
+    selector {
+        property: value;   //all browsers 
+        property: value\9; // < IE9 
+        *property: value;  // < IE8 
+        _property: value;  // < IE7 
+    }
+
+    // http://techhtml.github.io/selectors/
+
+    @media
+        xs = extra small screens (mobile phones)
+        sm = small screens (tablets)
+        md = medium screens (some desktops)
+        lg = large screens (remaining desktops)
+
+
+        background-repeat: no-repeat;
+
+
+    p > div {
+        text-indent: 10px;
+    }
+
+    p > div > div {
+        text-indent: 20px;
+    }
+    ??
+
+
+    CSS Lint
+        Don't use !important ..... ...?
+
+    
+*/

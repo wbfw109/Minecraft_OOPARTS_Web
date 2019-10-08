@@ -1,0 +1,51 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<br/>
+<div class="display-4 head-word font-weight-bold">{{ title }}.</div>
+<h3>{{ message }}</h3><br/>
+
+
+<p class="indent5">
+    <strong class="body-set-1-year">2009</strong><br/>
+    <div class="indent4"><strong>- [Minecraft]</strong> Pre-classic (Java)</div>
+    <div class="indent4"><strong>- [Minecraft]</strong> Classic (Java)</div>
+</p>
+
+<p class="indent5">
+    <strong class="body-set-1-year">2010</strong><br/>
+    <div class="indent4"><strong>- [Minecraft]</strong> Indev (In Development, Java)</div>
+    <div class="indent4"><strong>- [Minecraft]</strong> Infdev (Infinite Development, Java)</div>
+    <div class="indent4"><strong>- [Minecraft]</strong> Alpha release (Java)</div>
+</p>
+<p class="indent5">
+    <strong class="body-set-1-year">2011</strong><br/>
+    <div class="indent4"><strong>- [Minecraft]</strong> Beta release (Java)</div>
+    <div class="indent4"><strong style="color: fuchsia">- [Admin]</strong> Minecraft 첫 체험</div>
+    <div class="indent4"><strong>- [Minecraft]</strong> Official release (Java)</div>
+</p>
+<p class="indent5">
+    <strong class="body-set-1-year">2012</strong><br/>
+    <div class="indent4"><strong style="color: fuchsia">- [Admin]</strong> Minecraft 서버 기획 및 알파테스트</div>
+</p>
+<p class="indent5">
+    <strong class="body-set-1-year">2013</strong><br/>
+    <div class="indent4"><strong style="color: fuchsia">- [Admin]</strong> Minecraft 서버 자체 테스트</div>
+</p>
+<p class="indent5">
+    <strong class="body-set-1-year">2014 ~ 2017</strong><br/>
+    <div class="indent4"><strong style="color: fuchsia">- [Admin]</strong> ... ??? ...</div>
+    <div class="indent4"><strong>- [Minecraft]</strong> Windows 10 edition release (C++)</div>
+</p><br/>
+<p class="indent5">
+    <strong class="body-set-1-year">2018 ~ (현재)</strong><br/>
+    <div class="indent4"><strong style="color: fuchsia">- [Admin]</strong> 서버 구축 및 수련중...</div>
+</p><br/>
+
+<div class="thumbnail img-auto">
+    {% load static %}
+    <img src="{% static 'app/media/history.png' %}" alt="history image">
+</div>
+
+{% endblock %}

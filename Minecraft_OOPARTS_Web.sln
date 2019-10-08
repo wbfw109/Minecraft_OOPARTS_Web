@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Minecraft_OOPARTS_Web", "Minecraft_OOPARTS_Web\Minecraft_OOPARTS_Web.pyproj", "{4D6A0B17-706A-4265-9BE5-E2F1A57164D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D6A0B17-706A-4265-9BE5-E2F1A57164D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D6A0B17-706A-4265-9BE5-E2F1A57164D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D6A0B17-706A-4265-9BE5-E2F1A57164D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D6A0B17-706A-4265-9BE5-E2F1A57164D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36E6CB73-4AE5-45E4-AE00-42AD80BB6050}
+	EndGlobalSection
+EndGlobal

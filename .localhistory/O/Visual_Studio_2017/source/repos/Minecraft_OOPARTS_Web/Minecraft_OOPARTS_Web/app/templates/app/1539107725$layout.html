@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - 마인크래프트 야생 오파츠 서버 !</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap-4.1.1.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}"/>
+    <script src="{% static 'app/scripts/modernizr-1.17.0.min.js' %}"></script>
+    {% block styletypes %}
+    {% endblock %}
+</head>
+
+<body class="body-set-1">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand font-weight-bold menu-bar-main-0" href="{% url 'show' %}">Minecraft OOPARTS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#start" aria-label="Toggle navigation" aria-controls="start" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="start">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item font-weight-bold">
+                <a class="nav-link menu-bar-main-1" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle font-weight-bold menu-bar-main-2" href="#" id="main-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    소개
+                </a>
+                <div class="dropdown-menu bg-dark" aria-labelledby="main-dropdown">
+                    <a class="dropdown-item text-success font-weight-bold" href="{% url 'about' %}">소개글</a>
+                    <a class="dropdown-item text-success font-weight-bold" href="{% url 'feature' %}">특징</a>
+                    <a class="dropdown-item text-success font-weight-bold" href="{% url 'history' %}">역사</a>
+                </div>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link font-weight-bold menu-bar-main-2" href="{% url 'environment' %}">환경</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold menu-bar-main-2" href="{% url 'best' %}">건축물</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold menu-bar-main-2" href="{% url 'contact' %}">연락</a>
+            </li>
+        </ul>
+
+        {% include 'app/loginpartial.html' %}
+    </div>
+</nav>
+<div class="container body-content responsive-display-10">
+    {% block content %}{% endblock %}
+    <hr/>
+    <footer>
+        <strong class="body-set-1-strong">&copy; Wbfw109</strong><br/>
+        <div class="indent5">: {{ year }} - Minecraft OOPARTS server</div>
+    </footer>
+</div>
+<script src="{% static 'app/scripts/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'app/scripts/bootstrap-4.1.1.min.js' %}"></script>
+<script src="{% static 'app/scripts/respond.min.js' %}"></script>
+{% block scripts %}
+
+{% endblock %}
+
+</body>
+</html>

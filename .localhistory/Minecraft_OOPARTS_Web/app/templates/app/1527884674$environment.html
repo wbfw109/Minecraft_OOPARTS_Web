@@ -1,0 +1,32 @@
+﻿{% extends "app/layout.html" %}
+
+{% block styletypes %}
+{% endblock %}
+
+
+
+{% block content %}
+<br/>
+<div class="display-4 head-word font-weight-bold">{{ title }}.</div>
+<h3 class="body-set-1-strong font-weight-bold">{{ message }}</h3>
+
+
+<p>
+    오파츠 서버(하늘, 고지대, 지상, 물+얼음, 지하, 지옥(불+용암), 엔더)
+    sky-ecosystem-1, 2 .. sky-mob-1 ...
+</p>
+
+<a href="#" data-toggle="modal" data-target="#sky-ecosystem-1">
+    {% load static %}
+    <img class="mx-auto img-fluid rounded" src="{% static 'app/media/craftguide.png' %}" alt="">
+</a>
+<div class="modal fade" id="sky-ecosystem-1" tabindex="-1" role="dialog" aria-labelledby="sky-ecosystem-1-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-full" role="document">
+        <div class="modal-body">
+            <img class="float-md-none img-fluid" src="{% static 'app/media/craftguide.png' %}" alt="">
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

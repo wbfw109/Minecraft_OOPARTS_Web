@@ -1,0 +1,16 @@
+﻿{% if user.is_authenticated %}
+<form id="logoutForm" action="/logout" method="post" class="navbar-expand-md">
+    {% csrf_token %}
+    <ul class="nav navbar-nav">
+        <li><span class="navbar-brand"> Login on &lt; {{ user.username }} &gt;</span></li>
+        <li><a class ="menu-bar-main-2" href="javascript:document.getElementById('logoutForm').submit()">로그아웃</a></li>
+    </ul>
+</form>
+
+{% else %}
+
+<ul class="nav navbar-nav">
+    <li><a class ="menu-bar-main-2" href="{% url 'login' %}">로그인</a></li>
+</ul>
+
+{% endif %}
